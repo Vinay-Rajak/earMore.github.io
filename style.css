@@ -1,0 +1,886 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(4, 4, 4);
+}
+
+/*-----------> main page width div id= "first" */
+#first {
+    background-image: linear-gradient(rgba(29, 30, 33, 0.3), rgba(2, 3, .3)), url(a/q.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* ----> nav bar css */
+#first nav {
+    position: absolute;
+    margin-top: 2.5%;
+    width: 100%;
+    height: 7vh;
+    /* padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; */
+
+}
+
+#first nav h1 {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 6vh;
+    color: white;
+    padding: 0px 0px 0px 5vw;
+    line-height: 11px;
+}
+
+#first nav ul {
+    float: right;
+    display: flex;
+    align-items: center;
+    padding: 0px 5vw;
+}
+
+#first nav ul a {
+    text-decoration: none;
+    margin-right: 2.5vw;
+    font-size: 3.4vh;
+    color: white;
+    transition: .8s;
+    padding: 5px;
+}
+
+#first nav ul a:hover {
+    color: black;
+    background-color: rgba(226, 226, 216, 0.729);
+    border-radius: 10px;
+    width: max-content;
+
+}
+
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    margin-right: 25px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#check {
+    display: none;
+}
+
+
+/* ----> first-content  */
+
+.firstContent {
+    position: absolute;
+    text-align: center;
+    margin:15% 28vw;
+    color: white;
+
+}
+
+.firstContent h1 {
+    margin-bottom: 3.5vh;
+    font-size: 9vh;
+}
+
+.firstContent button {
+    margin-top: 5vw;
+    box-sizing: none;
+    padding: 12px 35px;
+    font-size: 22px;
+    border-radius: 7px 0 7px 0;
+    font-weight: 700;
+    border: transparent;
+    background-color: rgb(235, 177, 32); 
+    box-shadow: 4px 2px 10px rgb(122 101 48);
+    transition: all .5s ease;
+}
+
+.firstContent button:hover {
+    font-size: 23px;
+    cursor: pointer;
+
+
+}
+
+/* >>>>>>>> #ourStory <<<<<<<<<<<<<<< */
+
+#ourStory {
+    margin-top: 28vh;
+    padding: 35px 12vw;
+    height: 84vh;
+    color: beige;
+    display: flex;
+
+}
+
+#ourStory div {
+    /* width: 50%; */
+    /* border: 2px solid red; */
+    height: 100%;
+    /* margin: 3px; */
+
+}
+/* 
+.firstOur {
+    border: 1px solid rgb(249, 218, 44);
+    
+} */
+
+.firstOur div {
+    width: 50%;
+    float: right;
+    /* display: flex; */
+    /* border: 1px solid rgb(253, 5, 162); */
+
+
+}
+.firstOur1{
+    margin-top: -10vh;
+}
+
+.firstOur img {
+    width: 94%;
+    height: 50%;
+    margin-bottom: 1.5vh;
+}
+
+.secondOur {
+    /* border: 1px solid red; */
+    padding: 10% 0 0 5%;
+    width: 50%;
+
+
+}
+
+.secondOur h2 {
+    color: rgb(235, 177, 32);
+    font-size: 6vh;
+}
+
+.secondOur p {
+    margin: 5% 0;
+    text-indent: 10px;
+}
+
+
+
+ /* read more about section  */
+
+
+#check2{
+    display: none;
+}
+.more{
+    display: none;
+
+}
+.check2box{
+    color: rgb(235, 177, 32);
+     cursor: pointer;
+}
+#check2:checked ~ .more {
+ display: inline;
+}
+#check2:checked ~ .check2box{
+    visibility: hidden;
+}
+#check2:checked ~ .check2box::after{
+    content: 'show less';
+    visibility: visible;
+    font-weight: 200;
+     font-size: 18px;
+
+}
+
+
+/*  special section  */
+
+#special{
+    /* border: 2px solid red ; */
+     /* height: 90vh;  */
+    height: 100%;
+    width: 100%;
+    margin-top: 12vh;
+    margin-bottom: 5vh;
+
+
+}
+#special h1{
+    text-align: center;
+    color: rgb(235, 177, 32);
+    font-size: 7vh;
+    margin-bottom: 15px;
+}
+#special>p{
+    text-align: center;
+    color: bisque;
+}
+.special1{
+    /* border: 2px solid yellow; */
+    width: 65vw;
+    /* height: 60vh; */
+    height: 100%;
+    margin: auto;
+    margin-top:50px ;
+    display: flex;
+    justify-content: space-between;
+  
+  
+}
+.special1 > div{
+ border-bottom-left-radius: 19px;
+ border-top-right-radius: 19px;
+/* height: 70vh; */
+ width: 20vw;
+ background-color: rgb(12, 12, 12);
+ /* border: 2px solid green; */
+ height: 100%;
+ color: bisque;
+
+}
+
+
+   
+  
+
+.special1>div>img{
+    width: 100%;
+    height: 40vh;
+    border-top-right-radius: 19px;
+   
+}
+
+.special1>div>h4{
+  margin: 15px 0px 10px 15px;
+   font-size: 18px;
+}
+.special1>div>i{
+    margin: 10px 3px 0 15px;
+}
+.special1>div>p{
+   color: rgb(117, 115, 112);
+   text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.special1>div>p:hover{
+ color: gold;
+}
+
+/* // discover section , */
+#discover{
+  clear: both;
+    /* border: 1px solid gold; */
+ 
+    width: 100%;
+    /* height: 90vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 11vh;
+}
+#discover> div{
+    /* border: 2px solid red; */
+ min-width:500px ;
+    width: 47%;
+    height: 90%;
+    margin-top: 5vh;
+    color: beige;
+   padding: 4%;
+    
+}
+#discover> div>h2{
+    font-size: 50px;
+    font-weight: 300;
+      margin: 10% 0 6% 0;
+}
+#discover> div>p{
+    line-height: 30px;
+    font-size:20px;
+}
+#discover> div >button{
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 15px;
+    height: 65px;
+    background-color:  rgb(235, 177, 32);
+    border-radius: 5px;
+  transition: .1s;
+}
+#discover> div >img{
+    width: 90%;
+    border-radius: 12px 0 12px 0;
+   filter: brightness(80%);
+}
+
+#discover> div >button:hover{
+    cursor: pointer;
+    scale: 1.08;
+    font-weight: 400;
+}
+
+
+
+/* ---------------// people section //--------- */
+
+
+
+#people{
+    width: 100vw;
+    height: 100%;
+    /* border: 1px solid gold; */
+    color: gold;
+    text-align: center;
+    margin-top: 70px;
+}
+#people>h2{
+    margin-top: 25px;
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+#in{
+    overflow: hidden;
+
+    /* border: 5px solid red; */
+    margin: auto;
+    width: 54vw;
+    height: 22vh;
+    margin-bottom: 10px;
+ display: flex;
+  
+}
+
+#in>.slide{
+    flex-basis: 510vw;
+    height: 100%;
+    /* border: 2px solid rgb(255, 255, 255) ; */
+   min-width: 100%;
+     display: flex;
+     color: beige;
+     align-items: center;
+
+   
+}
+.slide>p{
+    /* color: blanchedalmond; */
+    margin-left: 8px;
+}
+.slide>img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  margin: 3px;
+    
+}
+#people>button{
+    width: 50px;
+    height: 32px;
+    font-size: 25px;
+    color: gold;
+    background-color: rgb(4, 4, 4);
+ border: transparent;
+ cursor: pointer;
+}
+
+
+
+/* ///  Our chefs ///------------- */
+
+#chefs{
+    width: 100%;
+    height: 100%;
+    /* border: 3px solid white; */
+   margin-top: 30px;
+   padding: 25px;
+
+}
+#chefs>h2{
+    color: gold;
+    font-size: 48px;
+    text-align: center;
+   margin: 8px;
+   font-weight: 100;
+}
+#chefs>p{  color: rgb(222, 222, 198);
+    font-size: 18px;
+    text-align: center;
+  margin: 15px;
+
+}
+.inChef{
+    width: 97%;
+    height: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    
+    justify-content: center;
+    margin-left: 15px;
+    padding: 25px;
+}
+.inChef>div{
+    margin: 10px;
+    width: 25%;
+    height: 70vh;
+    /* border:2px solid green; */
+   
+    
+}
+
+.inChef>div>img{
+   width: 100%;
+   height: 80%;
+   margin-bottom: 10px;
+   border-radius: 8px ;
+   overflow: hidden;
+   transform: .5s;
+}
+
+.inChef>div>h4{
+    color: azure;
+    text-align: center;
+  /* line-height: 25px; */
+    font-size: 20px;
+}
+
+.inChef>div>p{
+    color: bisque;
+    text-align: center;
+
+}
+.inChef>div:hover {
+    scale: 1.1;
+    cursor: pointer;
+
+}
+.inChef>div:hover h4{
+    color: gold;
+}
+
+
+/*----- /////----   Gallery  ------////////// */
+
+#Gallery{
+    /* border: 2px solid gold; */
+    color: beige;
+    margin-top: 40px; 
+     padding: 25px;
+}
+#Gallery>h2{
+    color: gold;
+    font-size: 48px;
+    text-align: center;
+   margin: 8px;
+   font-weight: 100;
+}
+#Gallery>p{  color: rgb(222, 222, 198);
+    font-size: 18px;
+    text-align: center;
+  margin: 15px;
+  margin-bottom: 8px;
+}
+
+#inGallery{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+
+#inGallery>div{
+    /* border: 2px solid green; */
+    width: 25%;
+    margin: 10px 10px;
+    height: 65vh;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+#inGallery>div:first-child{
+    background-image: url('./a/g1.jpg');
+    background-position: center;
+    background-size: cover;
+    /* background-color: rebeccapurple; */
+}
+
+#inGallery>div:last-child{
+    background-image: url('./a/g4.jpg');
+    background-position: center;
+    background-size: cover;
+    /* background-color: rebeccapurple; */
+}
+
+#inGallery>div>div{
+    width: 100%;
+    height: 48%;
+    margin-bottom:6% ;
+}
+
+#inGallery>div>div>img{
+width: 100%;
+height: 100%;
+border-radius: 8px;
+position: relative;
+
+}
+#inGallery>div>p{
+    font-size: 40px;
+    position: absolute;
+  bottom: -56px;
+font-weight: 900;
+margin-left: 36%;
+background-color: rgba(3, 3, 3, 0.879);
+letter-spacing: 1.4px;
+padding: 5px;
+border-radius: 8px;
+  color: gold;
+  transition: all .3s ease-in-out;
+  
+}
+#inGallery>div:hover p{
+    transform: translateY(-170%);
+    cursor: pointer;
+
+}
+
+
+/* /////Footer ----------- */
+
+
+#footer{
+    /* border: 2px solid red; */
+    display: flex;
+    color: antiquewhite;
+    padding: 20px;
+    padding-left: 50px;
+    margin-top: 10vh;
+
+    background-color: rgb(19, 18, 18);
+}
+#footer>h2{
+    /* width: 20vw; */
+    float: right;
+    /* border: 1px solid white; */
+    margin: 0 20px 7vh 75px;
+}
+#footer>div{
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    margin-left: 30px;
+    /* width: 70vw; */
+}
+#footer>div>h5{
+    font-weight: 100;
+    font-size: 18px;
+    margin-right:12vw ;
+    line-height: 40px;
+    color: #605e5e;
+}
+#footer>div>h5:hover{
+    cursor: pointer;
+    color: antiquewhite;
+}
+#footer>div>h5>input{
+    margin-right: -3px;
+  height: 40px;
+  width: 65%;
+  background-color: transparent;
+ border: 1px solid whitesmoke;
+  padding-left: 8px;
+  color: wheat;
+  font-size: 16px;
+}
+#footer>div>h5>button{
+    margin-left: -3px;
+   height: 40.5px;
+   font-size: 17px;
+ 
+   width: 122px;
+   
+   background-color: rgb(201, 171, 4);
+   border: none;
+   
+
+}
+#footer>div>h5>button:hover{
+    cursor: pointer;
+    background-color: gold;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+        @media (max-width: 980px) {
+
+            /*----->> media for mavbar <<-----*/
+            #first nav h1 {
+                margin-top: 18px;
+            }
+
+            #first nav label {
+                margin-top: 10px;
+
+            }
+
+            #first nav ul {
+                position: fixed;
+                background: rgba(39, 38, 38, 0.937);
+                height: 70vh;
+                width: 100%;
+                top: 70px;
+                left: -100%;
+                flex-direction: column;
+                z-index: 1;
+                transition: all 1.2s;
+
+            }
+
+            #first nav ul a {
+                margin-top: 30px;
+                color: rgb(254, 251, 251);
+                font-size: 25px;
+            }
+
+            .checkbtn {
+                display: block;
+            }
+
+            #check:checked~ul {
+                left: 0%;
+            }
+
+
+            /* ----->>> media for .firstContent <<<<---- */
+
+            .firstContent {
+
+                margin: 25vh 25px 0 25px;
+            }
+
+            .firstContent h1 {
+                font-size: 7vh;
+            }
+
+            .firstContent button {
+                width: 175px;
+                margin-top: 8vh;
+                font-size: 20px;
+            }
+
+            /* >>>>>>>>>>>>> #ourStory section<<<<<<<<<<<<< */
+            #ourStory {
+                flex-direction: column-reverse;
+                align-items: center;
+                width: 100vw;
+                height: 100%;
+                margin-top: 10vh;
+            }
+        .firstOur{
+                margin-top:10vh ;
+                display: block;
+                width: 60vw;
+            }
+            .secondOur{
+                width:73vw ;
+                margin-bottom: 2vh;
+                padding: 8px 0px 5px 20px;
+            
+            }
+            .secondOur p{
+                font-size: 22px;
+            }
+            .secondOur button{
+                font-size: 18px;
+            }
+
+
+            /* special section */
+
+            .special1{
+                width: 89vw;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .special1 > div{
+                min-width: 40vw;
+                margin:10px ;
+            }
+
+
+            /* discover section */
+            #discover>div{
+                min-width: 80vw;
+            }
+            #discover>div>h2{
+            font-size: 200%;
+            }
+            #discover>div>p{
+                font-size: 85%;
+            }
+            #discover>div>button{
+                font-size: 21px;
+                height: 55px;
+            }
+
+            /* ----- our chefs---- */
+
+            .inChef>div{
+                width: 34%;
+            }
+
+            /* /// Gallery // */
+
+            #inGallery>div{
+                width: 34%;
+            }
+
+                        
+            /* /// footer */
+            
+        #footer{
+            flex-wrap: wrap;
+
+                }
+        #footer>div{
+            /* border: 2px solid green; */
+    
+            grid-template-columns: 30% 70%;
+            margin-left: 0px;
+            margin-left: 15%;
+           width: 92vw;
+            
+        }
+        #footer>div>h5{
+            font-size: 20px;
+        }
+
+        #footer>div>h5>input{
+            width: 40vh;
+            margin-top: 4vh;
+           
+        }
+        #footer>div>h5>button{
+            margin-left: 0;
+            width: 40vh;
+        }
+
+        }
+
+
+
+        @media (max-width:750px){
+            /* people section  */
+            
+                #in{
+                    width: 90vw; 
+                    height: 28vh;
+                }
+
+                
+            /* ----- our chefs---- */
+
+
+            .inChef{
+                flex-wrap: wrap;
+            }
+            .inChef>div{
+                width: 45%;
+            }
+
+            /* /// Gallery /// */
+            #inGallery{
+                flex-wrap: wrap;
+
+            }
+            #inGallery>div{
+                width: 45%;
+            }
+            
+            
+            /* /// footer */
+            
+        #footer{
+            flex-wrap: wrap;
+
+                }
+        #footer>div{
+            /* border: 2px solid green; */
+            grid-template-columns:45% 68%;
+            margin-left: -10px;
+           
+            
+        }
+
+        #footer>div>h5>input{
+            width: 80vw;
+            margin-top: 4vh;
+           
+        }
+        #footer>div>h5>button{
+            margin-left: 0;
+            width: 80vw;
+        }
+
+
+
+
+    }
+
+        @media (max-width:650px){
+
+            .special1 > div{
+                min-width: 70vw;
+                margin:10px ;
+            }
+            .special1 > div > h4{
+                font-size: 25px;
+            }
+
+            /* people section */
+
+                #people{
+                    width: 100vw;
+                }
+
+                /* ----------- our chef ------------- */
+                        
+            /* ----- our chefs---- */
+
+
+            .inChef{
+                flex-wrap: wrap;
+            }
+            .inChef>div{
+                width: 82%;
+            }
+
+
+            /* gallery----------- */
+            #inGallery>div{
+                width: 83%;
+            }
+        }
